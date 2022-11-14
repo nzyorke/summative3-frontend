@@ -1,0 +1,894 @@
+.first-section {
+    width: 100%;
+    height: auto;
+
+
+
+
+    .first-section-a,
+    .first-section-b {
+        width: 100%;
+
+    }
+
+    .first-section-a {
+        height: auto;
+        padding: 20px 20px;
+        background-color: $blue;
+        @include flex-column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            // padding-top: 50px;
+            font-family: $mirra;
+            color: $red;
+            font-size: 120px;
+            letter-spacing: 1px;
+            border-bottom: 5px solid $white ;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: $white;
+            font-family: $jakarta;
+            font-size: 16px;
+            text-align: justify;
+            letter-spacing: .8px;
+            font-weight: 100;
+            line-height: 28px;
+        }
+
+    }
+
+    .first-section-b {
+        padding: 20px;
+        height: auto;
+        @include flex-column;
+        align-items: center;
+        justify-content: center;
+
+
+        p {
+            color: $blue;
+            font-family: $jakarta;
+            font-size: 16px;
+            text-align: justify;
+            letter-spacing: .8px;
+            font-weight: 500;
+            padding-bottom: 20px;
+            line-height: 28px;
+
+        }
+    }
+
+}
+
+.second-section {
+    width: 100%;
+    height: 120vh;
+    @include flex-column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    ;
+
+    .second-section-a {
+        @include flex-column;
+        align-items: center;
+
+        h4 {
+            width: 100%;
+            font-family: $sen;
+            color: $blue;
+            font-size: 35px;
+            letter-spacing: 1px;
+            text-align: right;
+            padding: 40px 0px;
+            z-index: 1;
+        }
+
+        .second-section-line {
+            position: absolute;
+            background-color: $green;
+            height: 5px;
+            width: 100%;
+            top: 160px;
+        }
+
+        p {
+            color: $blue;
+            font-family: $jakarta;
+            font-size: 16px;
+            text-align: justify;
+            letter-spacing: .8px;
+            font-weight: 500;
+            padding-bottom: 20px;
+            line-height: 28px;
+            z-index: 1;
+        }
+    }
+
+    .second-section-b {
+        // position: relative;
+
+        .logo {
+            position: absolute;
+            bottom: -150px;
+            right: 8px;
+
+            img {
+                width: 400px;
+            }
+
+        }
+
+        .star1,
+        .star2,
+        .star3 {
+            position: absolute;
+
+            img {
+
+                width: 90px;
+            }
+
+        }
+
+        .star1 {
+            bottom: 500px;
+            left: 20px;
+            z-index: 0;
+        }
+
+        .star2 {
+            bottom: 904px;
+            left: 300px;
+        }
+
+        .star3 {
+            bottom: 50px;
+            left: 150px;
+        }
+    }
+
+}
+
+.team-section {
+    width: 100vw;
+    height: 310vh;
+    @include flex-column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $red;
+    padding: 20px;
+
+    .section-header {
+        width: 100%;
+
+        h4 {
+            color: $white;
+            font-size: 79px;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+    }
+
+    .team-section-item {
+        @include flex-column;
+        justify-content: center;
+        border: 2px solid $white;
+
+        .item-header {
+            border-bottom: 2px solid $white;
+            background-color: $blue;
+
+            h6 {
+                color: $white;
+                font-size: 30px;
+                font-family: $jakarta;
+                font-weight: 500;
+                padding: 10px 5px;
+            }
+        }
+
+        .item-info {
+            padding: 10px;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+
+            p {
+                padding: 10px 0;
+                font-family: $jakarta;
+                color: $white;
+                font-size: 22px;
+                font-weight: 300;
+                text-align: justify;
+                letter-spacing: 1px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .first-section {
+        width: 100%;
+        height: auto;
+        @include flex-row;
+        align-items: center;
+        position: relative;
+
+        .first-section-a,
+        .first-section-b {
+            width: 100%;
+
+        }
+
+        .first-section-a {
+            position: relative;
+            height: 100vh;
+            padding: 20px 20px;
+            background-color: $blue;
+            @include flex-column;
+            align-items: center;
+            justify-content: center;
+
+
+            h1 {
+                font-family: $mirra;
+                color: $red;
+                font-size: 150px;
+                letter-spacing: 1px;
+                border-bottom: 5px solid $white ;
+                margin: 0;
+                line-height: 250px;
+                text-align: center;
+                z-index: 3;
+
+            }
+
+            p {
+                padding: 20px;
+                color: $white;
+                font-family: $jakarta;
+                font-size: 12px;
+                text-align: justify;
+                letter-spacing: .8px;
+                font-weight: 100;
+                line-height: 28px;
+            }
+        }
+
+        .first-section-b {
+            height: 100vh;
+            padding: 0px 20px;
+            padding-bottom: 74px;
+            @include flex-column;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                color: $blue;
+                font-family: $jakarta;
+                font-size: 12px;
+                text-align: justify;
+                letter-spacing: .8px;
+                font-weight: 500;
+                padding-top: 10px;
+                padding-bottom: 0;
+                line-height: 28px;
+
+            }
+        }
+
+    }
+
+    .second-section {
+        width: 100%;
+        height: 79vh;
+        @include flex-row-reverse;
+        align-items: flex-start;
+        // padding: 20px 290px 20px 20px;
+        position: relative;
+        overflow: hidden;
+        ;
+
+        .second-section-a {
+            width: 50%;
+
+            h4 {
+                width: 100%;
+                font-family: $sen;
+                color: $blue;
+                font-size: 35px;
+                letter-spacing: 1px;
+                text-align: right;
+                padding: 40px 0px;
+                z-index: 1;
+            }
+
+            .second-section-line {
+                position: absolute;
+                background-color: $green;
+                height: 6px;
+                width: 800px;
+                top: 166px;
+            }
+
+            p {
+                color: $blue;
+                font-family: $jakarta;
+                font-size: 16px;
+                text-align: justify;
+                letter-spacing: .8px;
+                font-weight: 500;
+                padding-bottom: 20px;
+                line-height: 28px;
+                z-index: 1;
+            }
+        }
+
+        .second-section-b {
+            // position: relative;
+
+            .logo {
+                position: absolute;
+                bottom: -148px;
+                left: -30px;
+
+                img {
+                    width: 400px;
+                }
+
+            }
+
+            .star1,
+            .star2,
+            .star3 {
+                position: absolute;
+
+                img {
+
+                    width: 50px;
+                }
+
+            }
+
+            .star1 {
+                bottom: 400px;
+                left: 20px;
+                z-index: 0;
+            }
+
+            .star2 {
+                bottom: 240px;
+                left: 200px;
+            }
+
+            .star3 {
+                bottom: 50px;
+                left: 150px;
+            }
+        }
+
+    }
+
+    .team-section {
+        width: 100vw;
+        height: auto;
+        @include flex-column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $red;
+        padding: 20px;
+
+        .section-header {
+            width: 100%;
+
+            h4 {
+                color: $white;
+                font-size: 79px;
+                text-transform: capitalize;
+                letter-spacing: 2px;
+            }
+        }
+
+        .team-section-item {
+            @include flex-column;
+            justify-content: center;
+            border: 2px solid $white;
+            margin-top: 20px;
+
+            .item-header {
+                border-bottom: 2px solid $white;
+
+                h6 {
+                    color: $white;
+                    font-size: 30px;
+                    font-family: $jakarta;
+                    font-weight: 500;
+                    padding: 15px 10px;
+                }
+            }
+
+            .item-info {
+                @include flex-row;
+
+                img {
+                    padding: 15px;
+                    width: 30%;
+                    height: auto;
+                }
+
+                p {
+                    width: 70%;
+                    padding: 10px 0;
+                    font-family: $jakarta;
+                    color: $white;
+                    font-size: 22px;
+                    font-weight: 300;
+                    text-align: justify;
+                    letter-spacing: 1px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .first-section {
+        width: 100%;
+        height: auto;
+        @include flex-row;
+        align-items: center;
+        position: relative;
+
+
+
+        .first-section-a,
+        .first-section-b {
+            width: 100%;
+
+        }
+
+        .first-section-a {
+            position: relative;
+            height: 100vh;
+            background-color: $blue;
+            padding-top: 60px;
+
+            @include flex-column;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                font-family: $mirra;
+                color: $red;
+                font-size: 200px;
+                letter-spacing: 1px;
+                border-bottom: 5px solid $white ;
+                margin: 0;
+                line-height: 250px;
+                text-align: center;
+                z-index: 3;
+
+            }
+
+            p {
+                padding: 20px 20px;
+                color: $white;
+                font-family: $jakarta;
+                font-size: 17px;
+                text-align: justify;
+                letter-spacing: .8px;
+                font-weight: 100;
+                line-height: 28px;
+            }
+        }
+
+        .first-section-b {
+            height: 100vh;
+            padding: 0px 20px;
+            @include flex-column;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                color: $blue;
+                font-family: $jakarta;
+                font-size: 17px;
+                text-align: justify;
+                letter-spacing: .8px;
+                font-weight: 500;
+                padding-top: 10px;
+                padding-bottom: 0;
+                line-height: 28px;
+
+            }
+        }
+
+    }
+
+    .second-section {
+        width: 100%;
+        height: 100vh;
+        @include flex-row-reverse;
+        align-items: flex-start;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+
+
+        .second-section-a {
+            width: 50%;
+
+            h4 {
+                width: 100%;
+                font-family: $sen;
+                color: $blue;
+                font-size: 42px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                line-height: 50px;
+                text-align: right;
+                padding: 40px 0px;
+                z-index: 1;
+            }
+
+            .second-section-line {
+                position: absolute;
+                background-color: $green;
+                height: 10px;
+                width: 100%;
+                top: 170px;
+            }
+
+            p {
+                color: $blue;
+                font-family: $jakarta;
+                font-size: 16px;
+                text-align: justify;
+                letter-spacing: .8px;
+                font-weight: 500;
+                padding-bottom: 20px;
+                line-height: 28px;
+                z-index: 1;
+            }
+        }
+
+        .second-section-b {
+            // position: relative;
+
+            .logo {
+                position: absolute;
+                bottom: -345px;
+                left: -200px;
+
+                img {
+                    width: 865px;
+                }
+
+            }
+
+            .star1,
+            .star2,
+            .star3 {
+                position: absolute;
+
+                img {
+
+                    width: 90px;
+                }
+
+            }
+
+            .star1 {
+                bottom: 500px;
+                left: 20px;
+                z-index: 0;
+            }
+
+            .star2 {
+                bottom: 100px;
+                left: 450px;
+            }
+
+            .star3 {
+                bottom: 50px;
+                left: 150px;
+            }
+        }
+
+    }
+
+    .team-section {
+        width: 100%;
+        height: auto;
+        @include flex-column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $red;
+        padding: 20px;
+
+        .section-header {
+            width: 100%;
+
+            h4 {
+                color: $white;
+                font-size: 79px;
+                text-transform: capitalize;
+                letter-spacing: 2px;
+            }
+        }
+
+        .team-section-item {
+            @include flex-column;
+            justify-content: center;
+            border: 2px solid $white;
+            margin-top: 20px;
+
+            .item-header {
+                border-bottom: 2px solid $white;
+                background-color: $blue;
+
+                h6 {
+                    color: $white;
+                    font-size: 30px;
+                    font-family: $jakarta;
+                    font-weight: 500;
+                    padding: 15px 10px;
+                }
+            }
+
+            .item-info {
+                @include flex-row;
+
+                img {
+                    padding: 15px;
+                    width: 30%;
+                    height: 250px;
+                    object-fit: cover;
+                    object-position: center top;
+                }
+
+                p {
+                    width: 70%;
+                    padding: 10px 0;
+                    font-family: $jakarta;
+                    color: $white;
+                    font-size: 22px;
+                    font-weight: 300;
+                    text-align: justify;
+                    letter-spacing: 1px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .first-section {
+        width: 100%;
+        height: auto;
+        @include flex-row;
+        align-items: flex-end;
+        position: relative;
+
+        .first-section-a,
+        .first-section-b {
+            width: 100%;
+
+        }
+
+        .first-section-a {
+            position: relative;
+            height: 100vh;
+            padding: 20px 20px;
+            background-color: $blue;
+            @include flex-column;
+            align-items: center;
+            justify-content: flex-start;
+
+            p {
+                padding-top: 51px;
+                color: $white;
+                font-family: $jakarta;
+                font-size: 20px;
+                text-align: justify;
+                letter-spacing: .8px;
+                font-weight: 100;
+                line-height: 46px;
+            }
+        }
+
+        .first-section-b {
+            height: 100vh;
+            padding: 30px 20px 0 20px;
+            @include flex-column;
+            align-items: center;
+            justify-content: flex-start;
+
+            p {
+                color: $blue;
+                font-family: $jakarta;
+                font-size: 18px;
+                text-align: justify;
+                letter-spacing: .8px;
+                font-weight: 500;
+                padding-top: 0px;
+                line-height: 36px;
+                padding-bottom: 20px;
+
+            }
+        }
+
+    }
+
+    .second-section {
+        width: 100%;
+        height: 79vh;
+        @include flex-row-reverse;
+        align-items: flex-start;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        ;
+
+        .second-section-a {
+            // width: 100%;
+            // background-color: $white;
+
+            h4 {
+                width: 100%;
+                font-family: $sen;
+                color: $blue;
+                font-size: 42px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                line-height: 50px;
+                text-align: right;
+                padding: 40px 0px;
+                z-index: 1;
+            }
+
+            .second-section-line {
+                position: absolute;
+                background-color: $green;
+                height: 10px;
+                width: 110%;
+                top: 170px;
+            }
+
+            p {
+                color: $blue;
+                font-family: $jakarta;
+                font-size: 25px;
+                text-align: justify;
+                letter-spacing: .8px;
+                font-weight: 500;
+                padding-bottom: 20px;
+                line-height: 40px;
+                z-index: 1;
+            }
+        }
+
+        .second-section-b {
+            // position: relative;
+
+            .logo {
+                position: absolute;
+                bottom: -345px;
+                left: -175px;
+
+                img {
+                    width: 900px;
+                }
+
+            }
+
+            .star1,
+            .star2,
+            .star3 {
+                position: absolute;
+
+                img {
+
+                    width: 90px;
+                }
+
+            }
+
+            .star1 {
+                bottom: 500px;
+                left: 20px;
+                z-index: 0;
+            }
+
+            .star2 {
+                bottom: 100px;
+                left: 450px;
+            }
+
+            .star3 {
+                bottom: 50px;
+                left: 150px;
+            }
+        }
+
+    }
+
+    .team-section {
+        width: 100%;
+        height: auto;
+        @include flex-column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $red;
+        padding: 20px;
+
+        .section-header {
+            width: 100%;
+
+            h4 {
+                color: $white;
+                font-size: 79px;
+                text-transform: capitalize;
+                letter-spacing: 2px;
+            }
+        }
+
+        .team-section-item {
+            @include flex-column;
+            justify-content: center;
+            border: 2px solid $white;
+            margin-top: 20px;
+
+            .item-header {
+                border-bottom: 2px solid $white;
+                background-color: $blue;
+
+                h6 {
+                    color: $white;
+                    font-size: 30px;
+                    font-family: $jakarta;
+                    font-weight: 500;
+                    padding: 15px 10px;
+                }
+            }
+
+            .item-info {
+                @include flex-row;
+
+                img {
+                    padding: 15px;
+                    width: 30%;
+                    height: 400px;
+                    object-fit: cover;
+                    object-position: center top;
+                }
+
+                p {
+                    width: 70%;
+                    padding: 10px 0;
+                    font-family: $jakarta;
+                    color: $white;
+                    font-size: 30px;
+                    font-weight: 300;
+                    text-align: justify;
+                    letter-spacing: 1px;
+                    line-height: 45px;
+                }
+            }
+        }
+    }
+}

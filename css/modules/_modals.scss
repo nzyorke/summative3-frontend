@@ -1,0 +1,702 @@
+// EDIT PRODUCT MODAL  -------------------------------------------------------------------
+.modal-content {
+    border-radius: 0px;
+}
+
+.modal-header {
+    background-color: $green;
+    border-radius: 0px;
+}
+
+.btn-close {
+    background: url('../img/whiteclosex.png')center/2em auto no-repeat;
+    opacity: 1;
+}
+
+.modal-title {
+    margin-bottom: 15px;
+    line-height: var(--bs-modal-title-line-height);
+    text-align: center;
+    font-size: 30px;
+    font-family: $sen;
+    font-weight: bold;
+}
+
+.edit-modal-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+#projectForm {
+    font-family: $jakarta;
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    margin-left: 2px;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.edit-modal-input {
+    all: unset;
+    width: 97%;
+    margin-left: 5px;
+    border-radius: 1px;
+    height: 40px;
+    padding-left: 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    border-color: none;
+    border: solid 1px black;
+
+}
+
+.modal-body {
+    background-color: #FDFBFC;
+}
+
+.edit-modal-button1,
+.edit-modal-button2 {
+    background-color: $blue;
+    color: white;
+    font-family: $jakarta;
+    border-radius: 0px;
+    font-size: 13px;
+    padding: 14px;
+    width: 43%;
+    border: none;
+}
+
+.edit-modal-button1 {
+    margin-left: 5px;
+}
+
+.edit-modal-button2 {
+    margin-left: 41px;
+}
+
+.productModal {
+    background-color: $white;
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 200px black;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+}
+
+
+.active {
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease;
+    z-index: 100;
+    border: solid 1px $green;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0;
+    transition: all .3s ease;
+    cursor: pointer;
+    line-height: 1.2;
+    overflow: scroll;
+}
+
+.display {
+    display: block !important;
+}
+
+// button:hover {
+//   transition: all .3s ease;
+//   color: white;
+//   background-color: $main-colour;
+// }
+
+// modal grid
+
+.product-modal-container {
+    height: 100%;
+    background: $white;
+}
+
+.product-modal-grid {
+    display: grid;
+    grid-template-rows: 250px .5fr 3fr 2fr;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    height: 100%;
+}
+
+.product-title {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    letter-spacing: .1em;
+
+    h2 {
+        font-size: 1.2em;
+        font-weight: 300;
+        color: $blue;
+    }
+
+    h3 {
+        font-size: 0.9em;
+        font-weight: 200;
+        color: $green;
+    }
+}
+
+.product-owner {}
+
+.product-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-description {
+    display: none;
+}
+
+.product-image {
+    //   grid-column: 2/3;
+    grid-row: 1/2;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: $green;
+    }
+}
+
+// #image-preview{
+//   img {
+//     width: 100%;
+//     height: 250px;
+//     object-fit: contain;
+//     background: $green;
+// }
+// }
+
+#close-modal {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #7D876E;
+    font-size: 40px;
+    height: 30px;
+    width: 30px;
+    background: white;
+    border: solid 1px #7D876E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+#close-modal:hover {
+    background: black;
+    transition: all .3s ease;
+
+}
+
+.name-underline {
+    width: 100%;
+    height: 1px;
+    background: $blue;
+}
+
+// .edit-tools {
+//   font-size: .6em;
+//   position: absolute;
+//   bottom: 17px;
+//   button{
+//     margin-right: 10px;
+//     font-family: $description-font;
+//   }
+// }
+
+// .modal-backdrop {
+//   z-index: 0;
+// }
+
+// DELETE MODAL  -------------------------------------------------------------------
+
+
+#deleteModalLabel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-weight: normal;
+    padding-top: 15px;
+}
+
+.delete-modal-header {
+    border-bottom: 2px solid white;
+    background-color: #7D876E;
+    border-radius: 0px;
+    font-family: $jakarta;
+}
+
+.delete-modal-body {
+    background-color: #7D876E;
+    height: 170px;
+}
+
+.confirm-delete-text {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-family: $jakarta;
+    padding-bottom: 10px;
+}
+
+.delete-modal-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.delete-modal-cancel-button,
+.delete-button {
+    background-color: $blue;
+    color: white;
+    font-family: $jakarta;
+    border-radius: 0px;
+    font-size: 13px;
+    padding: 11px;
+    width: 30%;
+    border: none;
+}
+
+.password-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#updatePasswordModal {
+    z-index: 99;
+    position: absolute;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    display: flex;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    visibility: hidden;
+    border: none;
+}
+
+#updatePasswordModal.active {
+    opacity: 1;
+    visibility: visible;
+    border: none;
+}
+
+.modal-description {
+    H4 {
+        padding: 2% 2%;
+        letter-spacing: .1em;
+        font-weight: 300;
+    }
+
+    p {
+        padding: 2% 2%;
+        font-size: .8em;
+    }
+}
+
+.description-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+#inquire {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 2%;
+}
+
+.comments-style {
+    h4 {
+        padding: 2% 2%;
+        letter-spacing: .1em;
+        font-weight: 300;
+    }
+
+    p {
+        padding: 2% 2%;
+        font-size: .8em;
+    }
+}
+
+.product-comments-container {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    h3 {
+        padding: 0 0 2% 0;
+        font-weight: 300;
+    }
+}
+
+.comment-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input {
+        all: unset;
+        border: 1px solid $blue;
+        width: 70%;
+        height: 100%;
+        font-size: .7em;
+        padding-left: 2%;
+
+    }
+
+    button {
+        letter-spacing: 0.1em;
+        width: 135px;
+        all: unset;
+        color: #FDFBFC;
+        background: #1C2536;
+        padding: 10px 20px 10px 20px;
+        display: flex;
+
+        p {
+            font-size: .8em;
+        }
+    }
+}
+
+.modal-message-container {
+    display: none;
+}
+
+.modal-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 2% 2% 0 2%;
+
+    h3 {
+        padding-bottom: 2%;
+        font-weight: 300;
+    }
+}
+
+.modal-message-inputs {
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    input {
+        all: unset;
+        border: 1px solid $blue;
+        width: 96%;
+        margin-bottom: 2%;
+        font-size: 0.7em;
+        padding: 2%;
+    }
+}
+
+.modal-message-large {
+    all: unset;
+    border: solid 1px $blue;
+    height: 80% !important;
+    font-size: 17px;
+    padding-left: 5px;
+    padding-top: 10px;
+    margin-bottom: 2%;
+}
+
+.modal-message-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        font-weight: 300;
+        width: 135px;
+        all: unset;
+        color: #FDFBFC;
+        background: #1C2536;
+        padding: 10px 15%;
+        display: flex;
+
+        p {
+            font-size: .8em;
+        }
+    }
+}
+
+// ADD PRODUCT MODAL 
+#addProductModal {}
+
+.add-modal-content {
+    border-radius: 0px;
+}
+
+.add-modal-header {
+    background-color: $green;
+    border-radius: 0px;
+    height: 40px;
+}
+
+.add-btn-close {
+    background: url(../img/whiteclosex.png) center/2em auto no-repeat;
+    width: 2em;
+    height: 2em;
+    border: none;
+    margin-top: 3px;
+    margin-left: 370px;
+}
+
+.add-modal-title {
+    margin-bottom: 15px;
+    line-height: var(--bs-modal-title-line-height);
+    text-align: center;
+    font-size: 30px;
+    font-family: $sen;
+    font-weight: bold;
+}
+
+
+#add-project-form {
+    font-family: $jakarta;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-left: 2px;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.add-modal-input {
+    all: unset;
+    width: 97%;
+    margin-left: 5px;
+    border-radius: 1px;
+    height: 40px;
+    padding-left: 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    border-color: none;
+    border: solid 1px black;
+    margin-bottom: 10px;
+}
+
+.add-modal-body {
+    background-color: #FDFBFC;
+    padding: 20px;
+}
+
+.add-modal-button1,
+.add-modal-button2 {
+    background-color: $blue;
+    color: white;
+    font-family: $jakarta;
+    border-radius: 0px;
+    font-size: 13px;
+    padding: 14px;
+    width: 43%;
+    border: none;
+}
+
+.add-modal-button1 {
+    margin-left: 5px;
+}
+
+.add-modal-button2 {
+    margin-left: 41px;
+}
+
+.edit-modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-product-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.product-comments {
+    display: flex;
+    height: 85px;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        all: unset;
+        width: 100%;
+        height: 100%;
+    }
+
+    li {
+        padding: 10px 0;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.user-comment-info {
+    display: flex;
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+.user-comment {
+    p {
+        font-size: .8em;
+    }
+}
+
+.no-comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.line-padding {
+    margin-bottom: 10px;
+}
+
+
+// INQUIRY MODAL
+.inquiry-modal-header {
+    text-align: center;
+    color: white;
+    height: 80px;
+    padding-top: 15px;
+    background-color: $green;
+    font-family: $sen;
+}
+
+.inquiry-modal-title {
+    font-size: 35px;
+    padding-top: 20px;
+}
+
+.inquiry-modal-body {
+    background: $green;
+    text-align: center;
+    color: white;
+    font-family: $sen;
+    border-top: 2px white;
+    height: 100px;
+    padding: 15px;
+}
+
+.inquiry-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.bi-check2-circle {
+    font-size: 60px;
+}
+
+.comments-profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    .product-modal-grid {
+
+        grid-template-rows: 1fr 2fr 2fr 2fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-image {
+        grid-row: 1/4;
+    }
+
+    .product-title {
+        padding-right: 20%;
+        justify-content: center;
+    }
+
+    .modal-description {
+        grid-row: 2/4;
+    }
+
+    .product-comments-container {
+        grid-row: 4/5;
+        grid-column: 1/3;
+        padding: 2%;
+    }
+
+    .inquire {
+        padding: 2% 2% 0 2%;
+    }
+
+    .modal-message-container {
+        grid-row: 2/4;
+    }
+
+    .padding-comments {
+        padding: 1%;
+    }
+
+    .comment-input {
+        input {
+            width: 85%;
+
+            .comment-input {
+                input {
+                    width: 80%;
+                    height: 100%;
+                }
+
+                button {
+                    padding: 10px 4%;
+                }
+            }
+
+        }
+    }
+}

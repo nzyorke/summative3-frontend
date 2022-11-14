@@ -1,0 +1,326 @@
+// EDIT ACCOUNT PAGE 
+
+.edit-account-header {
+    height: 60px;
+    border-bottom: 2px solid #1C2536;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.edit-title {
+    font-family: $sen;
+    font-weight: bold;
+}
+
+.back-button {
+    background-color: #1C2536;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border-radius: 0px;
+    font-size: 13px;
+    padding: 10px;
+    width: 160px;
+    border: none;
+    margin-left: 46px;
+    margin-top: -1px;
+}
+
+
+
+.profile-image {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    padding: 20px;
+    object-fit: cover;
+}
+
+#edit-account-form {
+    width: 95%;
+    margin: 0 auto;
+    height: 700px;
+    padding-left: 10px;
+}
+
+.edit-label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: $blue;
+}
+
+.edit-input,
+.edit-description-input {
+    font-family: $jakarta;
+    all: unset;
+    width: 94%;
+    margin-left: 5px;
+    border-radius: 1px;
+    height: 40px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    background: white;
+}
+
+.edit-description-input {
+    height: 140px;
+    box-sizing: border-box;
+    padding-bottom: 95px;
+}
+
+.button-container {
+    width: 95%;
+    margin-left: 5px;
+    height: 70px;
+}
+
+#edit-button1,
+#edit-button2 {
+    background-color: #1C2536;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border-radius: 0px;
+    font-size: 17px;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.edit-password-modal-content {
+    background-color: $tan;
+    width: 99%;
+    height: 350px;
+    padding: 10px;
+    border: 1px solid $blue;
+    margin-top: 200px;
+}
+
+.edit-password-input,
+.edit-password-input-old {
+    font-family: $jakarta;
+    all: unset;
+    width: 94%;
+    margin-left: 5px;
+    border-radius: 1px;
+    height: 40px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    background: white;
+}
+
+.edit-password-label,
+.edit-password-label-old {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: $blue;
+}
+
+.description-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+
+// ACCOUNT PAGE 
+
+.account-header {
+    height: 60px;
+    border-bottom: 2px solid #1C2536;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.account-title {
+    font-family: $sen;
+    font-weight: bold;
+}
+
+.back-button-account1,
+.back-button-account2 {
+    background-color: #1C2536;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border-radius: 0px;
+    font-size: 12px;
+    padding: 10px;
+    width: 110px;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: -2px;
+}
+
+.back-button-account1 {
+    margin-left: 40px;
+}
+
+
+.back-button-account2 {
+    margin-left: 15px;
+}
+
+#username-account {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #1C2536;
+}
+
+#listings-favourites-container {
+    font-family: $sen;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Sen", sans-serif;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1.5px solid #FDFBFC;
+    justify-content: center;
+}
+
+#listings-title,
+#favourites-title {
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+
+
+#account-result {
+    column-count: 2;
+    padding: 20px;
+    display: none;
+}
+
+#favourite-result {
+    column-count: 2;
+    padding: 20px;
+    display: none;
+}
+
+#bio-account {
+    display: flex;
+    justify-content: center;
+    padding: 5% 10%;
+    text-align: center;
+    font-weight: 300;
+    font-family: $jakarta;
+    font-size: 1.4em;
+}
+
+.list-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+}
+
+.favourite-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+}
+
+.list-underline {
+    width: 90%;
+    height: 3px;
+    background: $white;
+    margin-bottom: 20px;
+    display: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #account-result {
+        column-count: 3 !important;
+    }
+
+    #favourite-result {
+        column-count: 3;
+    }
+
+    #edit-profile-image {
+        margin-bottom: 30px;
+    }
+
+    .profile-image {
+        height: 200px;
+        width: 200px;
+    }
+
+    #edit-account-form {
+        width: 90%;
+        margin: 0 auto;
+        height: 620px;
+        padding-left: 20px;
+    }
+
+    #updatePasswordModal {
+        height: 101vh;
+        width: 101vw;
+        top: 195px;
+    }
+
+    .edit-password-modal-content {
+        width: 70%;
+        height: 350px;
+        padding: 10px;
+        border: 1px solid #1C2536;
+        margin-top: 200px;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+    #account-result {
+        column-count: 4;
+    }
+
+    #favourite-result {
+        column-count: 4;
+    }
+
+    #edit-account-form {
+        width: 85%;
+        margin: 0 auto;
+        height: 700px;
+        padding-left: 10px;
+    }
+
+    .update-password-modal-body {
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #account-result {
+        column-count: 4;
+    }
+
+    #favourite-result {
+        column-count: 4;
+    }
+}
