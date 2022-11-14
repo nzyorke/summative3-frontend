@@ -28,7 +28,7 @@ function filterExpand() {
 populateAccountEditPage = () => {
   userId = sessionStorage.userID;
   $.ajax({
-    url: `http://localhost:3400/user/${userId}`,
+    url: `https://summative3-backend-coral.vercel.app/user/${userId}`,
     type: "GET",
     success: (userData) => {
       console.log("Product was found!");
@@ -71,7 +71,7 @@ fillEditUserInputs = (user, id) => {
     console.log(username, password, imageUrl, bio);
 
     $.ajax({
-      url: `http://localhost:3400/updateUser/${userId}`,
+      url: `https://summative3-backend-coral.vercel.app/updateUser/${userId}`,
       type: "PATCH",
       data: {
         username: username,

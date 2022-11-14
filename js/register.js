@@ -6,7 +6,7 @@ const profileImgInput = document.getElementById("image-url-input");
 
 // server
 // normally this would come from an external JSON
-const server = "http://localhost:3400";
+const server = "https://summative3-backend-coral.vercel.app";
 
 signupBtn.onclick = function () {
     event.preventDefault();

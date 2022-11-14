@@ -41,7 +41,7 @@ function filterExpand() {
 let showAllProduct = () => {
   $.ajax({
     type: "GET",
-    url: "http://localhost:3400/allProduct",
+    url: "https://summative3-backend-coral.vercel.app/allProduct",
     // your success function contains a object which can be named anything
     success: (products) => {
       console.log(products);
@@ -67,7 +67,7 @@ let addNewProducts = () => {
     const imageURLInput = document.getElementById("image-url-input");
 
     $.ajax({
-      url: "http://localhost:3400/addProduct",
+      url: "https://summative3-backend-coral.vercel.app/addProduct",
       // use the post type to create data somewhere
       // requesting to POST our data
       type: "POST",
@@ -514,7 +514,7 @@ let addComment = (productId) => {
   commentBtn.onclick = () => {
     console.log(productId);
     $.ajax({
-      url: "http://localhost:3400/postComment",
+      url: "https://summative3-backend-coral.vercel.app/postComment",
       type: "POST",
       data: {
         text: document.getElementById("productComment").value,
@@ -540,7 +540,7 @@ let addComment = (productId) => {
 populateEditModal = (productId) => {
   console.log(productId);
   $.ajax({
-    url: `http://localhost:3400/product/${productId}`,
+    url: `https://summative3-backend-coral.vercel.app/product/${productId}`,
     type: "GET",
     success: (productData) => {
       console.log("Product was found!");
@@ -572,7 +572,7 @@ populateProductModal = (productId) => {
 populateAccountEditPage = () => {
   userId = sessionStorage.userID;
   $.ajax({
-    url: `http://localhost:3400/user/${userId}`,
+    url: `https://summative3-backend-coral.vercel.app/user/${userId}`,
     type: "GET",
     success: (userData) => {
       console.log("Product was found!");
@@ -587,7 +587,7 @@ populateAccountEditPage = () => {
 
 populateDeleteModal = (productId) => {
   $.ajax({
-    url: `http://localhost:3400/product/${productId}`,
+    url: `https://summative3-backend-coral.vercel.app/product/${productId}`,
     type: "GET",
     success: (productData) => {
       console.log("Product was found!");
@@ -666,7 +666,7 @@ fillEditInputs = (product, id) => {
     );
 
     $.ajax({
-      url: `http://localhost:3400/updateProduct/${productId}`,
+      url: `https://summative3-backend-coral.vercel.app/updateProduct/${productId}`,
       type: "PATCH",
       data: {
         name: productName,
@@ -696,7 +696,7 @@ let deleteProduct = (productId) => {
   // use ajax and go to the delete route
   $.ajax({
     // Let's go to our route
-    url: `http://localhost:3400/deleteProduct/${productId}`,
+    url: `https://summative3-backend-coral.vercel.app/deleteProduct/${productId}`,
     type: "DELETE",
     success: () => {
       // at this point, we can assume that the delete was successful
@@ -738,7 +738,7 @@ fillEditUserInputs = (user, id) => {
     console.log(username, password, imageUrl, bio);
 
     $.ajax({
-      url: `http://localhost:3400/updateUser/${userId}`,
+      url: `https://summative3-backend-coral.vercel.app/updateUser/${userId}`,
       type: "PATCH",
       data: {
         username: username,
