@@ -195,6 +195,7 @@ favorite
 let renderFavourites = (products) => {
   console.log(products);
   let userId = sessionStorage.userID;
+  if (userId) {
   $.ajax({
     type: "GET",
     url: `https://summative3-backend-coral.vercel.app/user/${userId}`,
@@ -205,6 +206,7 @@ let renderFavourites = (products) => {
       console.log(error);
     },
   });
+};
 };
 
 let checkFavourites = (user) => {

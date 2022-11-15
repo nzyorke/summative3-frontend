@@ -556,7 +556,7 @@ populateEditModal = (productId) => {
 populateProductModal = (productId) => {
   console.log(productId);
   $.ajax({
-    url: `http://localhost:3400/product/${productId}`,
+    url: `https://summative3-backend-coral.vercel.app/product/${productId}`,
     type: "GET",
     success: (productData) => {
       console.log("Product was found!");

@@ -1000,6 +1000,7 @@ nav {
   font-family: "Plus Jakarta Sans", sans-serif;
   display: inline;
   font-size: 1em;
+  cursor: pointer;
 }
 
 .nav-logo a {
@@ -1007,6 +1008,7 @@ nav {
   display: flex;
   justify-content: center;
   height: 100%;
+  cursor: pointer;
 }
 
 .nav-tools {
@@ -1024,6 +1026,7 @@ nav {
 .search-button {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .search-button p {
   margin: 0;
@@ -1047,6 +1050,7 @@ nav {
   display: flex;
   align-items: center;
   z-index: 99;
+  cursor: pointer;
 }
 .account-button #dp {
   width: 1.25em;
@@ -1203,6 +1207,10 @@ nav {
 
 .nav-padding {
   padding-top: 76px;
+}
+
+#search-button-input {
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4196,6 +4204,7 @@ header {
   background: #1C2536;
   padding: 10px 20px 10px 20px;
   display: flex;
+  cursor: pointer;
 }
 
 .account-buttons {
@@ -4305,4 +4314,4 @@ header {
   justify-content: center;
   font-size: 1.5em;
   padding: 50px 0;
-}/*# sourceMappingURL=styles.css.map */
+}

@@ -25,7 +25,7 @@ function navExpand() {
 let showAllProduct = () => {
   $.ajax({
     type: "GET",
-    url: "http://localhost:3400/allProduct",
+    url: "https://summative3-backend-coral.vercel.app/allProduct",
     // your success function contains a object which can be named anything
     success: (products) => {
       console.log(products);
@@ -50,7 +50,7 @@ let addNewProducts = () => {
     const imageURLInput = document.getElementById("image-url-input");
 
     $.ajax({
-      url: "http://localhost:3400/addProduct",
+      url: "https://summative3-backend-coral.vercel.app/addProduct",
       // use the post type to create data somewhere
       // requesting to POST our data
       type: "POST",
@@ -80,7 +80,7 @@ let addNewProducts = () => {
 populateProductModal = (productId) => {
   console.log(productId);
   $.ajax({
-    url: `http://localhost:3400/product/${productId}`,
+    url: `https://summative3-backend-coral.vercel.app/product/${productId}`,
     type: "GET",
     success: (productData) => {
       console.log("Product was found!");
@@ -186,7 +186,7 @@ let renderFavourites = (products) => {
   let userId = sessionStorage.userID;
   $.ajax({
     type: "GET",
-    url: `http://localhost:3400/user/${userId}`,
+    url: `https://summative3-backend-coral.vercel.app/user/${userId}`,
     success: (user) => {
       console.log(user);
       favouriteResult.innerHTML = `
@@ -302,7 +302,7 @@ let putCommentsInModal = (productId) => {
   commentBtn.onclick = () => {
     console.log(productId);
     $.ajax({
-      url: "http://localhost:3400/postComment",
+      url: "https://summative3-backend-coral.vercel.app/postComment",
       type: "POST",
       data: {
         text: document.getElementById("comment-input").value,
